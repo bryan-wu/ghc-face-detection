@@ -1,35 +1,37 @@
-## Description
-This is a implementation of mobilenet-ssd for face detection written in keras for GHC workshop.
+# Description
+This repository is prepare for Grace Hopper Conference workshop session: Confronting Algorithmic Bias in Artificial Intelligence. The repository contains implementation of mobilenet-ssd for face detection written in keras. The model training portion is borrowed from https://github.com/bruceyang2012/Face-detection-with-mobilenet-ssd
 
-## Prepare Software
-On Mac
-brew install python3
-pip3 install tensorflow
+# Required Software
+## Mac
+1. [Brew](https://brew.sh) - package manager for Mac
 
-## Live Inference
-The git repository comes with pre-trained model. Run [live.ipnb] on your laptop. It will use the pre-trained model to recognize faces from laptop camera. Tested on MacBook Pro.
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-## Prepare data
-1. You are advised to use CUDA-compatible GPUs to train the model.
-2. Download [WIDER Face](http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/) from Official Website , and put it into face_data folder in [face_generator.py](https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/face_generator.py).
-3. [wider_extract.py](https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/wider_extract.py) has been modified to show the method of exctracting faces from the datasets. It's easy to follow.
+2. [Python3](https://www.python.org/download/releases/3.0)
 
-## Train
-1. Follow [face_train.ipynb](https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/face_train.ipynb) step by step. You can change the parameters for better performance.
-2. [wider_train_small.npy](https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/wider_train_small.npy) and [wider_val_small.npy](https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/wider_val_small.npy) are made to testing the network. If you don't have enough gpu resources, you can also use them for training.
+`brew install python3`
 
-## Test
-Here are some testing results. It seems good but improvement is still needed. For example, the Bbox is a little bit inaccurate.
+3. [Keras](https://keras.io) - high-level deep learning library for Python.
+4. [Tensorflow](https://www.tensorflow.org) - Machine learning framework which serves as backend for Keras.
+5. [OpenCV](https://opencv.org) - Computer vision library.
+6. [Jupyter](http://jupyter.org) - Interactive editor to run python code
 
-<div align=center><img src="https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/output_test/38_Tennis_Tennis_38_683.jpg">    <img src="https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/output_test/2_Demonstration_Demonstration_Or_Protest_2_441.jpg"/></div>
+`pip3 install keras tensorflow opencv-python jupyter`
 
-<div align=center><img src="https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/output_test/10_People_Marching_People_Marching_2_307.jpg">    <img src="https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/output_test/12_Group_Group_12_Group_Group_12_331.jpg"/></div>
+# Live Inference
+The repository comes with [pre-trained model](https://github.com/vinay-h/ghc-face-detection/blob/master/models/ssd_mobilenet_face_epoch_25_loss0.0916.h5). Follow the steps to detect faces from your laptop 
 
-<div align=center><img src="https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/output_test/36_Football_americanfootball_ball_36_1021.jpg">    <img src="https://github.com/bruceyang2012/face-detection-with-mobilenet-ssd/raw/master/output_test/54_Rescue_rescuepeople_54_1006.jpg"/></div>
+1. Download the git repository to your Desktop
+2. Open a terminal and run the following command:
 
-## License
+`cd <download directory>`
+
+`jupyter live.pynb`
+
+A window will open and you will your face being recognized.
+
+# Training Model
+This is outside the scope of the workshop and is included for the benefit of the audience and for the fullness of the workshop. Please refer to the original GitHub repository for more information on the training: https://github.com/bruceyang2012/Face-detection-with-mobilenet-ssd
+
+# License
 MIT LICENSE
-
-## References
-1. [rykov8/ssd_keras](https://github.com/rykov8/ssd_keras)
-2. [rcmalli/keras-mobilenet](https://github.com/rcmalli/keras-mobilenet)

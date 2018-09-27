@@ -17,7 +17,7 @@ This repository is prepared for Grace Hopper Celebration workshop session: Confr
 6. [Jupyter](http://jupyter.org) - Interactive editor to run python code
 7. [ImUtils](https://github.com/jrosebr1/imutils) - Convenience functions for basic image processing
 
-`pip3 install keras tensorflow opencv-python jupyter imutils`
+`pip3 install keras tensorflow opencv-python jupyter imutils sklearn pillow beautifulsoup4 matplotlib tqdm`
 
 # Live Inference
 The repository comes with a pre-trained model to detect faces from the webcam video. Follow the steps to run this inference 

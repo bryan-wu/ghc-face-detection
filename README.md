@@ -25,6 +25,15 @@ This repository is prepared for Grace Hopper Celebration workshop session: Confr
 
 `pip3 install keras tensorflow opencv-python jupyter imutils sklearn pillow beautifulsoup4 matplotlib tqdm`
 
+## Linux (16.04 or above)
+1. Install Python 3
+
+`sudo apt update && sudo apt install python3.6`
+
+2. Install required python packages
+
+`pip3 install keras tensorflow opencv-python jupyter imutils sklearn pillow beautifulsoup4 matplotlib tqdm`
+
 # Live Inference
 The repository comes with a pre-trained model to detect faces from the webcam video. Follow the steps to run this inference 
 

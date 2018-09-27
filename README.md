@@ -49,6 +49,11 @@ The repository comes with a pre-trained model to detect faces from the webcam vi
 
 5. Press 'p' key on the video window to pause and 'Esc' key to stop the inference.
 
+# Challenges
+1. Count the number of people in the room.
+2. Capture any new face and save it as an image on local disk.
+3. Sound an alarm when an intruder is detected!
+
 <!--
 Miniconda3
 1. [Miniconda3]()

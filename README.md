@@ -2,9 +2,13 @@
 This repository is prepared for Grace Hopper Celebration workshop session: Confronting Algorithmic Bias in Artificial Intelligence. The repository contains implementation of mobilenet-ssd for face detection written in keras. The model training portion is borrowed from https://github.com/bruceyang2012/Face-detection-with-mobilenet-ssd
 
 # Required Software
-## Mac (macOS 10.12.6 Sierra or above)
-# Preferred method
-1. Download and install [Python3](https://www.python.org/ftp/python/3.6.5/python-3.6.5-macosx10.9.pkg) from official site.
+## Mac OS
+### Prerequisites
+**macOS 10.12.6 Sierra or above** (Click Apple log in the top left corner and select 'About This Mac' to get the OS version)
+
+### Instructions
+1. Download and install [Python3](https://www.python.org/ftp/python/3.6.5/python-3.6.5-macosx10.9.pkg) from official site. If you already have existing Python3, please make sure the version is **3.6.5** by running 'python3 --version'
+
 2. Upgrade pip to the latest
 
 `python3 -m pip install --user --upgrade pip`
@@ -25,7 +29,20 @@ This repository is prepared for Grace Hopper Celebration workshop session: Confr
 
 `pip3 install keras tensorflow opencv-python jupyter imutils sklearn pillow beautifulsoup4 matplotlib tqdm`
 
-## Linux (16.04 or above)
+### Troubleshooting steps
+1. If you see the following error, make sure the OS version is 10.12.6 or above. To check the version, click Apple log in the top left corner and select 'About This Mac'
+
+`ImportError: dlopen(/usr/local/lib/python3.6/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so, 6): Symbol not found: _SecKeyCopyExternalRepresentation
+  Referenced from: /usr/local/lib/python3.6/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so (which was built for Mac OS X 10.12)`
+  
+ 2. If you do not see the live video window, wait for up to 10 seconds depending on the processing power of the laptop. It is possible that the window may be hidden.
+ 
+ 3. If you run into issues while running Jupyter notebook, please kill the Jupyter notebook and restart the virtualenv enviornment
+  
+## Ubuntu
+### Prerequisites
+**Ubuntu 16.04 or above**
+
 1. Install Python 3
 
 `sudo apt update && sudo apt install python3.6`
@@ -48,11 +65,6 @@ The repository comes with a pre-trained model to detect faces from the webcam vi
 4. Jupyter will open a new tab or window on your default browser. Click on 'live.ipynb', and click 'Run' on each cell to execute. Once you reach the last cell, wait a few seconds for a new window to open up. You can see the face detection in action!
 
 5. Press 'p' key on the video window to pause and 'Esc' key to stop the inference.
-
-# Challenges
-1. Count the number of people in the room.
-2. Capture any new face and save it as an image on local disk.
-3. Sound an alarm when an intruder is detected!
 
 <!--
 Miniconda3
@@ -118,6 +130,11 @@ The repository comes with a pre-trained model to detect faces from the webcam vi
 4. Press 'p' key on the video window to pause and 'Esc' key to stop the inference.
 
 -->
+
+# Challenges
+1. Count the number of people in the room.
+2. Capture any new face and save it as an image on local disk.
+3. Sound an alarm when an intruder is detected!
 
 # Training Model
 This is outside the scope of the workshop and is included for the benefit of the audience and for the fullness of the workshop. Please refer to the original GitHub repository for more information on the training: https://github.com/bruceyang2012/Face-detection-with-mobilenet-ssd

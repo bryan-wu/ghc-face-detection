@@ -22,7 +22,7 @@ This repository is prepared for Grace Hopper Celebration workshop session: Confr
 # Live Inference
 The repository comes with a pre-trained model to detect faces from the webcam video. Follow the steps to run this inference 
 
-1. [Download] (https://github.com/vinay-h/ghc-face-detection/archive/master.zip) or clone this repository by clicking the 'clone or download' button on this page. 
+1. [Download](https://github.com/vinay-h/ghc-face-detection/archive/master.zip) or clone this repository by clicking the 'clone or download' button on this page. 
 2. Open a terminal and run the following command:
 
 `cd <download directory>`
